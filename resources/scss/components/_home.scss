@@ -1,0 +1,19 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .bloco-menu{
+        display: flex;
+        justify-content: space-between; 
+        .bloco{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 350px;
+            border: 1px solid #000;
+        }
+    }
+}
+

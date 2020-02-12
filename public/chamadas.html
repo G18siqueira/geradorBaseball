@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamadas.html">Chamadas</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="classificacao.html">Classificação</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Chamadas</h1>
+        <section class="chamadas">
+            <div class="container">
+                <!--  -->
+                <div id="capture">   
+                    <div class="tt"> 
+                        <h4>LIGA AMADORA DE BASEBALL</h4>
+                        <div class="bloco-times">
+                            <div class="time">
+                                <img src="" alt="" name="image-time"/>
+                            </div>
+                            <div class="vs">
+                                <h2>VS</h2>
+                            </div>
+                            <div class="time">
+                                <img src="" alt="" name="image-time2"/>
+                            </div>
+                        </div>
+                        <div class="tabela">
+                            <!--  -->
+                            <div class="linha fixa">
+                                <div class="coluna nome"></div>
+                                <div class="coluna valor vf">1</div>
+                                <div class="coluna valor vf">2</div>
+                                <div class="coluna valor vf">3</div>
+                                <div class="coluna valor vf">4</div>
+                                <div class="coluna valor vf">5</div>
+                                <div class="coluna valor vf">6</div>
+                                <div class="coluna valor vf2">7</div>
+                                <div class="coluna vazio"></div>
+                                <div class="coluna valor vf">R</div>
+                                <div class="coluna valor vf">H</div>
+                                <div class="coluna valor vf2">E</div>
+                            </div>    
+                            <!--  -->
+                            <!--  -->
+                            <div class="linha dinamica">
+                                <div class="coluna nome">
+                                    <input type="text" value="Time 1" class="nome-time">
+                                </div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf2"><input type="text"></div>  
+                                <div class="coluna vazio"></div>
+                                <div class="coluna valor vf"><input type="text"></div>  
+                                <div class="coluna valor vf"><input type="text"></div>  
+                                <div class="coluna valor vf2"><input type="text"></div> 
+                            </div>    
+                            <!--  -->
+                            <!--  -->
+                            <div class="linha dinamica2">
+                                <div class="coluna nome">
+                                    <input type="text" value="Time 2" class="nome-time2">
+                                </div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf"><input type="text"></div>
+                                <div class="coluna valor vf2"><input type="text"></div>  
+                                <div class="coluna vazio"></div>
+                                <div class="coluna valor vf"><input type="text"></div>  
+                                <div class="coluna valor vf"><input type="text"></div>  
+                                <div class="coluna valor vf2"><input type="text"></div> 
+                            </div>    
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="configuracoes">
+                    <div class="select-time">
+                        <select onchange="setTime(this);">
+                            <option value="">Escolha o time</option>
+                            <option value="images/time1.png">Time 1</option>
+                            <option value="images/time2.png">Time 2</option>
+                            <option value="images/time3.png">Time 3</option>
+                            <option value="images/time4.png">Time 4</option>
+                            <option value="images/time5.png">Time 5</option>                
+                        </select> 
+                        <select onchange="setTime2(this);">
+                            <option value="">Escolha o time</option>
+                            <option value="images/time1.png">Time 1</option>
+                            <option value="images/time2.png">Time 2</option>
+                            <option value="images/time3.png">Time 3</option>
+                            <option value="images/time4.png">Time 4</option>
+                            <option value="images/time5.png">Time 5</option>                
+                        </select>                
+                    </div>
+                    <div class="botao">
+                        <a href="" class="btn-teste">PRINT TESTE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script>
+        /*** SETAR IMAGEM NO SELECT ***/
+        function setTime(select){
+            var image = document.getElementsByName("image-time")[0];
+            var nome = document.getElementsByClassName("nome-time")[0];
+            
+            image.src = select.options[select.selectedIndex].value;
+            nome.value = select.options[select.selectedIndex].text;
+        }
+        function setTime2(select){
+            var image = document.getElementsByName("image-time2")[0];
+            var nome = document.getElementsByClassName("nome-time2")[0];
+
+            image.src = select.options[select.selectedIndex].value;
+            nome.value = select.options[select.selectedIndex].text;
+        }
+
+    </script>
+</body>
+</html>
