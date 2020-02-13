@@ -10165,6 +10165,21 @@ h3 {
   width: 100%;
 }
 
+body {
+  background: linear-gradient(147deg, #01212a 10%, #015673 60%);
+  background-repeat: no-repeat;
+}
+
+/*HACK PARA IMPRIMIR IMAGEM COMPLETA DO HTML TO CANVAS*/
+.html2canvas-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+/******************************************************/
 .home {
   display: flex;
   justify-content: center;
@@ -10184,6 +10199,20 @@ h3 {
   border: 1px solid #000;
 }
 
+.chamadas .container {
+  max-width: 1340px;
+}
+.chamadas #capture {
+  background: #01212a;
+  border: none !important;
+  padding: 100px;
+  overflow-x: hidden;
+}
+.chamadas .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .chamadas .bloco-times {
   display: flex;
   justify-content: space-between;
@@ -10196,7 +10225,6 @@ h3 {
   justify-content: center;
   width: 450px;
   height: 450px;
-  border: 1px solid #000;
 }
 .chamadas .bloco-times .time img {
   width: 100%;
@@ -10204,41 +10232,47 @@ h3 {
 .chamadas .bloco-times .vs h2 {
   font-size: 72px;
   margin-bottom: 0;
+  color: #fff;
 }
 .chamadas .tabela {
   width: 100%;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   padding: 20px 50px;
 }
 .chamadas .tabela .linha {
   display: flex;
 }
+.chamadas .tabela .linha.fixa {
+  color: #fff;
+}
 .chamadas .tabela .linha.fixa .vf {
   font-size: 36px;
   border-top: none;
-  border-left: 1px solid #000;
+  border-left: 1px solid #fff;
+  border-right: none;
 }
 .chamadas .tabela .linha.fixa .vf2 {
   font-size: 36px;
   border-top: none;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 .chamadas .tabela .linha.dinamica input {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .chamadas .tabela .linha.dinamica .nome input {
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-left: none;
   border-right: none;
 }
 .chamadas .tabela .linha.dinamica .vf input {
-  border-left: 1px solid #000;
+  border-left: 1px solid #fff;
+  border-right: none;
 }
 .chamadas .tabela .linha.dinamica .vf2 input {
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 .chamadas .tabela .linha.dinamica2 input {
   border-bottom: none;
@@ -10248,11 +10282,12 @@ h3 {
   border: none;
 }
 .chamadas .tabela .linha.dinamica2 .vf input {
-  border-left: 1px solid #000;
+  border-left: 1px solid #fff;
+  border-right: none;
 }
 .chamadas .tabela .linha.dinamica2 .vf2 input {
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 .chamadas .tabela .linha .coluna {
   height: 65px;
@@ -10286,4 +10321,6 @@ h3 {
   height: 100%;
   font-size: 30px;
   text-align: center;
+  background: transparent;
+  color: #fff;
 }

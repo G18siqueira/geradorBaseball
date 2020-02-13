@@ -1,2 +1,14 @@
-body{}
+body{
+    background: linear-gradient(147deg, rgba(1,33,42,1) 10%, rgba(1,86,115,1) 60%);
+    background-repeat: no-repeat;
+}
 main{}
+
+/*HACK PARA IMPRIMIR IMAGEM COMPLETA DO HTML TO CANVAS*/
+.html2canvas-container { 
+    width: 100% !important; height: 100% !important; 
+    position: relative!important;
+    left: 0!important;
+    top: 0!important;
+}
+/******************************************************/

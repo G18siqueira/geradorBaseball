@@ -25,17 +25,19 @@
             <div class="container">
                 <!--  -->
                 <div id="capture">   
-                    <div class="tt"> 
-                        <h4>LIGA AMADORA DE BASEBALL</h4>
+                    <div class="tt">                         
+                        <div class="logo">
+                            <img src="img/logo.png" alt="" anonymous/>
+                        </div>
                         <div class="bloco-times">
                             <div class="time">
-                                <img src="" alt="" name="image-time"/>
+                                <img src="" alt="" name="image-time" anonymous/>
                             </div>
                             <div class="vs">
                                 <h2>VS</h2>
                             </div>
                             <div class="time">
-                                <img src="" alt="" name="image-time2"/>
+                                <img src="" alt="" name="image-time2" anonymous/>
                             </div>
                         </div>
                         <div class="tabela">
@@ -99,19 +101,19 @@
                     <div class="select-time">
                         <select onchange="setTime(this);">
                             <option value="">Escolha o time</option>
-                            <option value="images/time1.png">Time 1</option>
-                            <option value="images/time2.png">Time 2</option>
-                            <option value="images/time3.png">Time 3</option>
-                            <option value="images/time4.png">Time 4</option>
-                            <option value="images/time5.png">Time 5</option>                
+                            <option value="img/time1.png">Time 1</option>
+                            <option value="img/time2.png">Time 2</option>
+                            <option value="img/time3.png">Time 3</option>
+                            <option value="img/time4.png">Time 4</option>
+                            <option value="img/time5.png">Time 5</option> 
                         </select> 
                         <select onchange="setTime2(this);">
                             <option value="">Escolha o time</option>
-                            <option value="images/time1.png">Time 1</option>
-                            <option value="images/time2.png">Time 2</option>
-                            <option value="images/time3.png">Time 3</option>
-                            <option value="images/time4.png">Time 4</option>
-                            <option value="images/time5.png">Time 5</option>                
+                            <option value="img/time1.png">Time 1</option>
+                            <option value="img/time2.png">Time 2</option>
+                            <option value="img/time3.png">Time 3</option>
+                            <option value="img/time4.png">Time 4</option>
+                            <option value="img/time5.png">Time 5</option>   
                         </select>                
                     </div>
                     <div class="botao">
@@ -121,6 +123,7 @@
             </div>
         </section>
     </main>
+    <script src="js/html2canvas.js"></script>
     <script src="js/main.js"></script>
     <script>
         /*** SETAR IMAGEM NO SELECT ***/
@@ -138,7 +141,6 @@
             image.src = select.options[select.selectedIndex].value;
             nome.value = select.options[select.selectedIndex].text;
         }
-
     </script>
 </body>
 </html>

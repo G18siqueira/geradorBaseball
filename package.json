@@ -27,5 +27,8 @@
     "uglify-js": "^3.6.1",
     "vue-template-compiler": "^2.6.11",
     "webpack-livereload-plugin": "^1.2.0"
+  },
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.5"
   }
 }
