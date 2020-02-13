@@ -23115,7 +23115,7 @@ $('.btn-teste').on('click', function (e) {
     scrollY: -window.scrollY,
     useCORS: true
   }).then(function (canvas) {
-    $('#capture').append(canvas);
+    // $('#capture').append(canvas);
     saveAs(canvas.toDataURL(), 'canvas-teste.png');
   });
 
