@@ -10170,6 +10170,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+input, select {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
 /*HACK PARA IMPRIMIR IMAGEM COMPLETA DO HTML TO CANVAS*/
 .html2canvas-container {
   width: 100% !important;
@@ -10199,13 +10214,10 @@ body {
   border: 1px solid #000;
 }
 
-.chamadas .container {
-  max-width: 1340px;
-}
 .chamadas #capture {
   background: #01212a;
   border: none !important;
-  padding: 100px;
+  padding: 50px 0 100px;
   overflow-x: hidden;
 }
 .chamadas .logo {
@@ -10213,110 +10225,337 @@ body {
   justify-content: center;
   align-items: center;
 }
-.chamadas .bloco-times {
+.chamadas .titulo {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.chamadas .titulo h2 {
+  font-size: 48px;
+  padding: 30px 0;
+}
+.chamadas .titulo p {
+  font-size: 30px;
+}
+.chamadas .bloco-campos {
+  display: flex;
+  justify-content: space-around;
+}
+.chamadas .campo {
+  width: 360px;
+}
+.chamadas .campo .nome-campo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.chamadas .times {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 50px;
+  align-items: center;
 }
-.chamadas .bloco-times .time {
+.chamadas .times .time {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 450px;
-  height: 450px;
 }
-.chamadas .bloco-times .time img {
-  width: 100%;
-}
-.chamadas .bloco-times .vs h2 {
-  font-size: 72px;
-  margin-bottom: 0;
+.chamadas .times p.divisor {
+  font-size: 20px;
   color: #fff;
 }
-.chamadas .tabela {
-  width: 100%;
-  border: 2px solid #fff;
-  padding: 20px 50px;
+.chamadas .times .nome {
+  width: 90px;
 }
-.chamadas .tabela .linha {
+.chamadas .times .nome.left {
+  margin-left: 10px;
+  -moz-text-align-last: start;
+       text-align-last: start;
+}
+.chamadas .times .nome.right {
+  margin-right: 10px;
+  -moz-text-align-last: end;
+       text-align-last: end;
+}
+.chamadas .times .nome select {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.chamadas .times .nome select option {
+  color: #000;
+}
+.chamadas .times .logo {
+  width: 75px;
+  height: 75px;
+}
+.chamadas .times .logo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.classificacao #capture {
+  background: linear-gradient(147deg, #01212a 10%, #015673 60%);
+  padding: 50px 0 100px;
+}
+.classificacao .logo,
+.classificacao .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.classificacao .logo h2,
+.classificacao .titulo h2 {
+  font-size: 48px;
+  color: #fff;
+  padding: 70px 0;
+}
+.classificacao .tabela {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+}
+.classificacao .tabela .linha {
   display: flex;
 }
-.chamadas .tabela .linha.fixa {
+.classificacao .tabela .linha.fixa {
   color: #fff;
 }
-.chamadas .tabela .linha.fixa .vf {
+.classificacao .tabela .linha.fixa .vf {
   font-size: 36px;
-  border-top: none;
+  border-top: 1px solid #fff;
   border-left: 1px solid #fff;
   border-right: none;
 }
-.chamadas .tabela .linha.fixa .vf2 {
+.classificacao .tabela .linha.fixa .vf2 {
   font-size: 36px;
   border-top: none;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 }
-.chamadas .tabela .linha.dinamica input {
+.classificacao .tabela .linha.fixa .posicao, .classificacao .tabela .linha.fixa .nome {
+  visibility: hidden;
+  opacity: 0;
+}
+.classificacao .tabela .linha.dinamica input {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
-.chamadas .tabela .linha.dinamica .nome input {
+.classificacao .tabela .linha.dinamica .posicao {
+  border: 1px solid #fff;
+  border-bottom: none;
+}
+.classificacao .tabela .linha.dinamica .nome input {
   border: 1px solid #fff;
   border-left: none;
   border-right: none;
+  border-bottom: none;
 }
-.chamadas .tabela .linha.dinamica .vf input {
+.classificacao .tabela .linha.dinamica .vf input {
   border-left: 1px solid #fff;
   border-right: none;
+  border-bottom: none;
 }
-.chamadas .tabela .linha.dinamica .vf2 input {
+.classificacao .tabela .linha.dinamica .vf2 input {
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 }
-.chamadas .tabela .linha.dinamica2 input {
+.classificacao .tabela .linha.dinamica2 input {
   border-bottom: none;
   border-top: none;
 }
-.chamadas .tabela .linha.dinamica2 .nome input {
+.classificacao .tabela .linha.dinamica2 .nome input {
   border: none;
 }
-.chamadas .tabela .linha.dinamica2 .vf input {
+.classificacao .tabela .linha.dinamica2 .vf input {
   border-left: 1px solid #fff;
   border-right: none;
 }
-.chamadas .tabela .linha.dinamica2 .vf2 input {
+.classificacao .tabela .linha.dinamica2 .vf2 input {
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 }
-.chamadas .tabela .linha .coluna {
-  height: 65px;
+.classificacao .tabela .linha .coluna {
+  height: 70px;
 }
-.chamadas .tabela .linha .coluna.nome {
-  width: 300px;
+.classificacao .tabela .linha .coluna.posicao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
 }
-.chamadas .tabela .linha .coluna.nome select {
+.classificacao .tabela .linha .coluna.nome {
+  width: 359px;
+  text-align: left;
+}
+.classificacao .tabela .linha .coluna.nome select {
   border-left: none;
   border-right: none;
 }
-.chamadas .tabela .linha .coluna.valor {
-  width: 65px;
+.classificacao .tabela .linha .coluna.nome input {
+  text-align: left;
+  padding: 0 10px;
+}
+.classificacao .tabela .linha .coluna.valor {
+  width: 70px;
   text-align: center;
 }
-.chamadas .tabela .linha .coluna.vazio {
+.classificacao .tabela .linha .coluna.valorG {
+  width: 130px;
+  text-align: center;
+}
+.classificacao .tabela .linha .coluna.vazio {
   width: 65px;
 }
-.chamadas .tabela .linha .coluna select {
+.classificacao .tabela .linha .coluna select {
   width: 100%;
   height: 100%;
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
 }
-.chamadas .tabela .linha .coluna select option {
+.classificacao .tabela .linha .coluna select option {
   font-size: 22px;
 }
-.chamadas .tabela .linha .coluna input {
+.classificacao .tabela .linha .coluna input {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+}
+
+.resultados #capture {
+  background: #01212a;
+  border: none !important;
+  padding: 100px;
+  overflow-x: hidden;
+}
+.resultados .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultados .bloco-times {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.resultados .bloco-times .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+}
+.resultados .bloco-times .time img {
+  width: 100%;
+}
+.resultados .bloco-times .vs h2 {
+  font-size: 72px;
+  margin-bottom: 0;
+  color: #fff;
+}
+.resultados .tabela {
+  width: 100%;
+  border: 2px solid #fff;
+  padding: 20px 50px;
+}
+.resultados .tabela .linha {
+  display: flex;
+}
+.resultados .tabela .linha.fixa {
+  color: #fff;
+}
+.resultados .tabela .linha.fixa .vf {
+  font-size: 36px;
+  border-top: none;
+  border-left: 1px solid #fff;
+  border-right: none;
+}
+.resultados .tabela .linha.fixa .vf2 {
+  font-size: 36px;
+  border-top: none;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.resultados .tabela .linha.dinamica input {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.resultados .tabela .linha.dinamica .nome input {
+  border: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+}
+.resultados .tabela .linha.dinamica .vf input {
+  border-left: 1px solid #fff;
+  border-right: none;
+}
+.resultados .tabela .linha.dinamica .vf2 input {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.resultados .tabela .linha.dinamica2 input {
+  border-bottom: none;
+  border-top: none;
+}
+.resultados .tabela .linha.dinamica2 .nome input {
+  border: none;
+}
+.resultados .tabela .linha.dinamica2 .vf input {
+  border-left: 1px solid #fff;
+  border-right: none;
+}
+.resultados .tabela .linha.dinamica2 .vf2 input {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.resultados .tabela .linha .coluna {
+  height: 65px;
+}
+.resultados .tabela .linha .coluna.nome {
+  width: 300px;
+}
+.resultados .tabela .linha .coluna.nome select {
+  border-left: none;
+  border-right: none;
+}
+.resultados .tabela .linha .coluna.valor {
+  width: 65px;
+  text-align: center;
+}
+.resultados .tabela .linha .coluna.vazio {
+  width: 65px;
+}
+.resultados .tabela .linha .coluna select {
+  width: 100%;
+  height: 100%;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.resultados .tabela .linha .coluna select option {
+  font-size: 22px;
+}
+.resultados .tabela .linha .coluna input {
   width: 100%;
   height: 100%;
   font-size: 30px;

@@ -1,0 +1,146 @@
+.resultados{      
+    #capture{
+        background: rgba(1,33,42,1);
+        //background: linear-gradient(147deg, rgba(1,33,42,1) 10%, rgba(1,86,115,1) 60%);
+        border: none!important;
+        padding: 100px;
+        overflow-x: hidden;    
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloco-times{   
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+        .time{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 450px;
+            height: 450px;
+            // border: 1px solid #fff;     
+            img{
+                width: 100%;
+            }       
+        }
+        .vs{
+            h2{
+                font-size: 72px;
+                margin-bottom: 0;
+                color: #fff;
+            }
+        }
+    }
+    .tabela{
+        width: 100%;
+        border: 2px solid #fff;
+        padding: 20px 50px;
+        .linha{
+            display: flex;      
+            &.fixa{           
+                color: #fff;     
+                .vf{
+                    font-size: 36px;
+                    border-top: none;
+                    border-left: 1px solid #fff;     
+                    border-right: none;                 
+                }
+                .vf2{
+                    font-size: 36px;
+                    border-top: none;
+                    border-left: 1px solid #fff;        
+                    border-right: 1px solid #fff;  
+                }
+            }      
+            &.dinamica{
+                input{
+                    border-top: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                }
+                .nome{
+                    input{
+                        border: 1px solid #fff;     
+                        border-left: none;                   
+                        border-right: none;                   
+                    }
+                }
+                .vf{     
+                    input{
+                        border-left: 1px solid #fff;      
+                        border-right: none;               
+
+                    }               
+                }
+                .vf2{        
+                    input{
+                        border-left: 1px solid #fff;        
+                        border-right: 1px solid #fff;
+                    }            
+                }
+            }      
+            &.dinamica2{
+                input{
+                    border-bottom: none;
+                    border-top: none;
+                }
+                .nome{
+                    input{
+                        border: none;
+                    }
+                }
+                .vf{     
+                    input{
+                        border-left: 1px solid #fff;                   
+                        border-right: none;  
+                    }               
+                }
+                .vf2{        
+                    input{
+                        border-left: 1px solid #fff;        
+                        border-right: 1px solid #fff;
+                    }            
+                }
+            }      
+            .coluna{
+                height: 65px;
+                &.nome{
+                    width: 300px;
+                    select{
+                        border-left: none;
+                        border-right: none; 
+                    }
+                }
+                &.valor{
+                    width: 65px;
+                    text-align: center;                                      
+                }                
+                &.vazio{
+                    width: 65px;
+                }
+                select{
+                    width: 100%;
+                    height: 100%;                   
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    option{
+                        font-size: 22px;
+                    }                    
+                }
+                input{
+                    width: 100%;
+                    height: 100%;                    
+                    font-size: 30px;
+                    text-align: center;
+                    background: transparent;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}

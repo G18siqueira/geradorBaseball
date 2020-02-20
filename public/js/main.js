@@ -23113,7 +23113,8 @@ $('.btn-teste').on('click', function (e) {
   var imagemPrint = document.querySelector("#capture");
   _html2canvas__WEBPACK_IMPORTED_MODULE_0__(imagemPrint, {
     scrollY: -window.scrollY,
-    useCORS: true
+    useCORS: true,
+    ignoreElements: document.querySelector('select')
   }).then(function (canvas) {
     // $('#capture').append(canvas);
     saveAs(canvas.toDataURL(), 'canvas-teste.png');

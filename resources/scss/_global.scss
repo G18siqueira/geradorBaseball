@@ -4,6 +4,20 @@ body{
 }
 main{}
 
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+p{
+    margin-bottom: 0;
+}
+input, select{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
 /*HACK PARA IMPRIMIR IMAGEM COMPLETA DO HTML TO CANVAS*/
 .html2canvas-container { 
     width: 100% !important; height: 100% !important; 

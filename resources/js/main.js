@@ -12,7 +12,8 @@ $('.btn-teste').on('click', function(e){
     var imagemPrint = document.querySelector("#capture");
     html2canvas(imagemPrint,{
         scrollY: -window.scrollY,
-        useCORS:true
+        useCORS:true,
+        ignoreElements: document.querySelector('select') 
     }).then(canvas => {
         // $('#capture').append(canvas);
         saveAs(canvas.toDataURL(), 'canvas-teste.png');
