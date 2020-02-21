@@ -10280,7 +10280,7 @@ input, select {
   -moz-text-align-last: end;
        text-align-last: end;
 }
-.chamadas .times .nome select {
+.chamadas .times .nome input {
   width: 100%;
   background: transparent;
   color: #fff;
@@ -10289,8 +10289,9 @@ input, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  pointer-events: none;
 }
-.chamadas .times .nome select option {
+.chamadas .times .nome input option {
   color: #000;
 }
 .chamadas .times .logo {
@@ -10562,4 +10563,78 @@ input, select {
   text-align: center;
   background: transparent;
   color: #fff;
+}
+
+.top #capture {
+  background: linear-gradient(147deg, #01212a 10%, #015673 60%);
+  padding: 50px 0 100px;
+}
+.top .logo,
+.top .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top .logo h2,
+.top .titulo h2 {
+  font-size: 48px;
+  color: #fff;
+  padding: 70px 0;
+}
+.top .tabela {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.top .tabela .linha {
+  display: flex;
+}
+.top .tabela .linha input {
+  background: transparent;
+  border: none;
+}
+.top .tabela .linha .logo {
+  width: 130px;
+  height: 130px;
+}
+.top .tabela .linha .logo img {
+  width: 100%;
+  height: auto;
+}
+.top .tabela .linha.fixa {
+  color: #fff;
+}
+.top .tabela .linha.fixa .coluna {
+  border: 1px solid #fff;
+  border-bottom: none;
+}
+.top .tabela .linha.fixa .coluna.logo2 {
+  width: 130px;
+}
+.top .tabela .linha.fixa .coluna.posicao {
+  width: 70px;
+}
+.top .tabela .linha.fixa .coluna.nome {
+  width: 290px;
+}
+.top .tabela .linha.fixa .coluna.valor {
+  width: 100px;
+}
+.top .tabela .linha.dinamica {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.top .tabela .linha.dinamica:last-child {
+  border-bottom: 1px solid #fff;
+}
+.top .tabela .linha.dinamica .coluna.posicao {
+  width: 70px;
+}
+.top .tabela .linha.dinamica .coluna.nome {
+  width: 290px;
+  border-right: 1px solid #fff;
+}
+.top .tabela .linha.dinamica .coluna.valor {
+  width: 100px;
+  border-right: 1px solid #fff;
 }

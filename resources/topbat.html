@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamadas.html">Chamadas</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="classificacao.html">Classificação</a></li>
+                <li><a href="topbat.html">Top Rebatedores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Top Rebatedores</h1>
+        <section class="top">
+            <div class="container">
+                <!--  -->
+                <div id="capture">   
+                    <div class="tt">                         
+                        <div class="logo">
+                            <img src="img/logo.png" alt="" anonymous/>
+                        </div>
+                        <div class="titulo">
+                            <h2>Top Rebatedores - DivisãoAAA</h2>
+                        </div>
+                    </div> 
+                    <div class="tabela">
+                        <!-- LINHA -->
+                        <div class="linha fixa">                            
+                            <div class="coluna posicao">0</div>
+                            <div class="coluna nome">Teste</div>  
+                            <div class="logo2"></div>
+                            <div class="coluna valor vf">AVG</div>
+                            <div class="coluna valor vf">HR</div>
+                            <div class="coluna valor vf">RBI</div>                           
+                        </div>
+                        <!-- LINHA -->
+                        <!-- LINHA -->
+                        <div class="linha dinamica">                        
+                            <div class="coluna posicao">1</div>
+                            <div class="coluna logo">
+                                <img src="" alt="" name="image-time" anonymous/>
+                            </div>
+                            <div class="coluna nome">
+                                <input type="text" value="" placeholder="Nome do Jogador">
+                                <input type="text" value="" class="nome-time"placeholder="Nome do Jogador">                               
+                            </div>
+                            <div class="coluna valor vf"><input type="text"></div>  
+                            <div class="coluna valor vf"><input type="text"></div>
+                            <div class="coluna valor vf"><input type="text"></div>                             
+                        </div>
+                        <!-- LINHA -->                        
+                       
+                    </div>
+                </div>
+                <!--  -->
+                <div class="configuracoes">           
+                    <div class="select-time">
+                        <select onchange="setTime(this);">
+                            <option value="">Escolha o time</option>
+                            <option value="img/time1.png">Time 1</option>
+                            <option value="img/time2.png">Time 2</option>
+                            <option value="img/time3.png">Time 3</option>
+                            <option value="img/time4.png">Time 4</option>
+                            <option value="img/time5.png">Time 5</option> 
+                        </select> 
+                        <select onchange="setTime2(this);">
+                            <option value="">Escolha o time</option>
+                            <option value="img/time1.png">Time 1</option>
+                            <option value="img/time2.png">Time 2</option>
+                            <option value="img/time3.png">Time 3</option>
+                            <option value="img/time4.png">Time 4</option>
+                            <option value="img/time5.png">Time 5</option>   
+                        </select>                
+                    </div>        
+                    <div class="botao">
+                        <a href="" class="btn-teste">PRINT TESTE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script>
+        /*** SETAR IMAGEM NO SELECT ***/
+        function setTime(select){
+            var image = document.getElementsByName("image-time")[0];
+            var nome = document.getElementsByClassName("nome-time")[0];
+            
+            image.src = select.options[select.selectedIndex].value;
+            nome.value = select.options[select.selectedIndex].text;
+        }
+        function setTime2(select){
+            var image = document.getElementsByName("image-time2")[0];
+            var nome = document.getElementsByClassName("nome-time2")[0];
+
+            image.src = select.options[select.selectedIndex].value;
+            nome.value = select.options[select.selectedIndex].text;
+        }
+    </script>
+</body>
+</html>

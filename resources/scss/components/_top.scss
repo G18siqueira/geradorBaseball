@@ -1,0 +1,80 @@
+.top{     
+    #capture{
+        background: linear-gradient(147deg, rgba(1,33,42,1) 10%, rgba(1,86,115,1) 60%);
+        padding: 50px 0 100px;
+    } 
+    .logo,
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 48px;
+            color: #fff;
+            padding: 70px 0;
+        }
+    }
+
+    .tabela{
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        
+        //padding: 20px 50px;
+        .linha{
+            display: flex;   
+            input{
+                background: transparent;
+                border: none;
+            }   
+            .logo{
+                width: 130px;
+                height: 130px;
+                img{
+                    width: 100%;
+                    height: auto ;
+                }
+            }
+            &.fixa{           
+                color: #fff;                
+                .coluna{
+                    border: 1px solid #fff;
+                    border-bottom: none;
+                    &.logo2{
+                        width: 130px;
+                    }
+                    &.posicao{
+                        width: 70px;
+                    }
+                    &.nome{
+                        width: 290px;
+                    }  
+                    &.valor{
+                        width: 100px;
+                    }
+                }                  
+            }      
+            &.dinamica{
+                border-top: 1px solid #fff;
+                border-left: 1px solid #fff;
+                &:last-child{
+                    border-bottom: 1px solid #fff;
+                }
+                .coluna{
+                    &.posicao{
+                        width: 70px;
+                    }
+                    &.nome{
+                        width: 290px;
+                        border-right: 1px solid #fff;
+                    }
+                    &.valor{
+                        width: 100px;
+                        border-right: 1px solid #fff;
+                    }
+                }                
+            }      
+        }
+
+    }
+}

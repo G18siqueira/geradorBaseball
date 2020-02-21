@@ -22,6 +22,7 @@ mix
     .copy('resources/chamadas.html', 'public/chamadas.html')
     .copy('resources/classificacao.html', 'public/classificacao.html')
     .copy('resources/resultados.html', 'public/resultados.html')
+    .copy('resources/topbat.html', 'public/topbat.html')
     .copyDirectory('resources/img', 'public/img')
     .copyDirectory('resources/icomoon/fonts', 'public/fonts');
  

@@ -64,14 +64,14 @@
                 margin-right: 10px;
                 text-align-last: end;                
             }
-            select{
+            input{
                 width: 100%;
                 background: transparent;
                 color: #fff;
                 font-size: 12px;
                 border: none;
                 appearance: none;
-                // pointer-events: none;
+                pointer-events: none;
                 
                 option{
                     color: #000;
